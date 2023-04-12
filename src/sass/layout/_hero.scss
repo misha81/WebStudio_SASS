@@ -1,0 +1,56 @@
+.hero{
+    background-image: url(../src/img/mobile/background480.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 118px 0;
+
+    .hero-title{
+        @extend .big-title;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $hero-logo-color;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px) {
+                font-weight: 900;
+                font-size: 44px;
+        }
+    }
+
+    .hero-button{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background-color: #2196F3;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: none;
+        padding: 10px 24px;
+        display: flex;
+        align-items: center;
+        /* text-align: center; */
+        cursor: pointer;
+        &:hover {
+            background-color: $button-hover;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+            background-image: url(../src/img/tablet/background768.jpg);
+    }
+    @media screen and (min-width: 1200px) {
+            background-image: url(../src/img/desktop/background1200.jpg);
+
+    }
+}
